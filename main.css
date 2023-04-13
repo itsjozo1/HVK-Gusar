@@ -9,7 +9,7 @@ body{
     max-width: 1960px;
 }
 .title{
-    min-height: 100vh;
+    min-height: 50em;
     background-image: url(/img/main11.jpg);
     background-position: center; 
     background-repeat: no-repeat;
@@ -25,10 +25,11 @@ header ul{
     justify-content: space-between;
     list-style: none;
 }
-header li{
+header a{
     color: white;
     font-weight: 700;
     font-size: 20px;
+    text-decoration: none;
 }
 .title h1{
     text-align: center;
@@ -92,13 +93,19 @@ header li{
     font-size: 0.8em;
     border-radius: 5px;
     padding: 5px;
+    transition: 1.4s;
+}
+.info button:hover{
+    color: #263136;
+    background-color: #fff;
+    border-color: #263136;
 }
 .info2 img{
     border-radius:25px 0 0 25px;
 }
+
 .program{
-    height: 45em;
-    background: linear-gradient(0deg, #a6a8e0, #F3F3F3);
+    background: linear-gradient(0deg, #b0b1b5, #F3F3F3);
     padding-bottom: 5%;
 }
 .program h1{
@@ -112,43 +119,47 @@ header li{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.program-container div{
-    width: 30%;
-    background-color: #505050;
+.program-containers{
+    margin-top: 2em;
+    height: 22em;
+    width: 30em;
     border-radius: 25px;
     position: relative;
+    overflow: hidden;
 }
-.program-container h2{
+.overlay{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background: #505050; 
+    transition: ease 1s;
+    opacity: 0.9;
+}
+.overlay h2{
     text-align: center;
     color: white;
     font-weight: 700;
-    font-size: 180%;
-    height: 15%;
-    margin-top: 0.5em;
-    transition:  3s ;
+    margin-top: .5em;
 }
 .program-container img{
     width: 100%;
-    height: 90%;
-    filter: grayscale(100%);
-    border-radius:0px 0px 25px 25px; 
-    transition: 3s;
+    height: 100%;
 }
-.program-container p{
-    width: 50%;
+.overlay p{
     text-align: center;
     color: white;
     font-weight: 300;
     font-size: 0.8em;
-    position: absolute;
-    top: 0;
-    left: 25%;
+    margin-top: 1em;
     opacity: 0;
-    transition:  2.5s ;
+    transition: 1.5s;
 }
-.program-container button{
-    width: 30%;
+.overlay button{
+    margin-top: 1em;
+    margin-left: 33%;
+    width: 34%;
     background-color: #505050;
     color: white;
     font-weight: 500;
@@ -156,50 +167,51 @@ header li{
     font-size: 0.8em;
     border-radius: 5px;
     padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 35%;
     opacity: 0;
-    transition:  2.5s ;
+    transition: 1.5s;
 }
-
-.program-container div:hover h2 {
+.overlay button:hover{
+    color: #505050;
+    background: #b0b1b5;
+}
+.program-containers:hover .overlay{
     height: 45%;
 }
-.program-container div:hover p{
+.program-containers:hover .overlay p, .program-containers:hover .overlay button{
     opacity: 1;
-    top: 20%;
 }
-.program-container div:hover button{
-    opacity: 1;
-    top: 33%;
-}
-.program-container div:hover img{
-    filter: grayscale(0);
+@media screen and (max-width: 1250px){
+    .info-container{
+        flex-wrap: wrap;
+    }
+    .info2 img{
+        border-radius:0px 25px 25px 0px; 
+
+    }
 }
 .contact{
-    height: 15em;
-    background-color: #a6a8e0;
+    height: 5em;
+    background-color: #b0b1b5;
     padding: 1% 20%;
-    display: flex;
-    justify-content: space-between;
 }
-.contact h3{
+.contact a{
     padding-bottom: 0.2em;
     color: #263136;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
-}
-.contact p{
-    font-size: 20px;
-    font-weight: 400;
+    text-decoration: underline;  
 }
 .contact-social{
+    margin-left: auto;
+    margin-right: auto;
     width: 15em;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 }
 .contact-social img{
-    height: 2em
+    height: 1.5em
+}
+.contact-social img:hover, a:hover{
+    opacity: 0.7
 }
