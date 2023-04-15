@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1960px;
+}
+.slider{
+    min-height: 20em;
+    height: 30em;
+    max-width: 60em;
+    position: relative;
+    background-image: url(/img/info/stara1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+.slider *{
+    box-sizing: border-box;
+}
+.caption{
+    background: linear-gradient(rgba(0,0,0,0), #000);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4em 1em 2em 1em;
+    text-align: center;
+}
+.caption h1{
+    margin: 0;
+    color: #fff;
+}
+.caption p {
+    color: #8a8a8a;
+}
+.arrow-left, .arrow-right {
+    background: #fff;
+    position: absolute;
+    top: 40%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.arrow-left:hover, .arrow-right:hover {
+    background: #000;
+    color: #fff;
+}
+.arrow-left{
+    left: 1em;
+}
+.arrow-right{
+    right: 1em;
+}
+.image-fade {
+    animation: imgFade 0.5s ease-in-out;
+}
+@keyframes imgFade {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+.contact {
+    height: 5em;
+    padding: 3% 20%;
+  }
+  .contact a {
+    padding-bottom: 0.2em;
+    color: #263136;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .contact-social {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-social img {
+    height: 1.5em;
+  }
+  .contact-social img:hover,
+  a:hover {
+    opacity: 0.7;
+  }
