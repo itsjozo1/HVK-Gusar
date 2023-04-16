@@ -8,6 +8,70 @@ body{
     margin-right: auto;
     max-width: 1960px;
 }
+.title{
+    height: 25em;
+    width: 100%;
+    background-image: url(/img/info/titleimg3.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.title h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    padding-top:2em;
+}
+.desc{
+    padding: 5em 6em;
+    display: flex;
+    justify-content: space-around;
+}
+.desc img{
+    max-height: 25em;
+    max-width: 35em;
+    border-radius: 13px;
+}
+.desc-text{
+    padding: 1.5em;
+}
+.desc-text h2{
+    color: #0a2351;
+    font-weight: 800;
+    font-size: 35px;
+}
+.desc-text p{
+    color: #5072A7;
+    font-weight: 600;
+    margin-top: 1em;
+}
+.achievements{
+    padding: 2em 3em;
+    background-color: #f6ede0;
+    display: flex;
+    justify-content: space-around;
+
+}
+.achievements img{
+    align-self: center;
+    max-height: 30em;
+    max-width: 40em;
+    border-radius: 13px;
+}
+.achievements-text{
+    padding: 1.5em;
+}
+.achievements-text h2{
+    color: #0a2351;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+}
+.achievements-text p{
+    font-weight: 600;
+    margin-top: 1em;  
+}
 .slider{
     min-height: 20em;
     height: 30em;
@@ -18,6 +82,9 @@ body{
     background-position: center;
     background-size: cover;
     transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
 }
 .slider *{
     box-sizing: border-box;
@@ -68,29 +135,26 @@ body{
     0% { opacity: 0;}
     100% { opacity: 1;}
 }
-.contact {
-    height: 5em;
-    padding: 3% 20%;
-  }
-  .contact a {
-    padding-bottom: 0.2em;
-    color: #263136;
-    font-size: 30px;
-    font-weight: 700;
-    text-decoration: underline;
-  }
-  .contact-social {
+.kontakt{
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    width: 15em;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .contact-social img {
-    height: 1.5em;
-  }
-  .contact-social img:hover,
-  a:hover {
-    opacity: 0.7;
-  }
+    padding: 5em;
+    justify-content: space-around;
+}
+.kontakt div{
+    text-align: center;
+    padding: 1.5em;
+}
+.kontakt i{
+    color: #0a2351;
+}
+.kontakt h3{
+    color: #0a2351;
+    font-weight: 800;
+    font-size: 22px;
+}
+.kontakt p{
+    font-weight: 500;
+}
