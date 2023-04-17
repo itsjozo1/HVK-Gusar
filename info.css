@@ -24,11 +24,12 @@ body{
     padding-top:2em;
 }
 .desc{
-    padding: 5em 6em;
+    padding: 5em 5%;
     display: flex;
     justify-content: space-around;
 }
 .desc img{
+    align-self: center;
     max-height: 25em;
     max-width: 35em;
     border-radius: 13px;
@@ -47,16 +48,16 @@ body{
     margin-top: 1em;
 }
 .achievements{
-    padding: 2em 3em;
+    padding: 2em 4%;
     background-color: #f6ede0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 .achievements img{
     align-self: center;
     max-height: 30em;
-    max-width: 40em;
+    max-width: 35em;
     border-radius: 13px;
 }
 .achievements-text{
@@ -85,6 +86,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 4em;
+    margin-bottom: 4em;
 }
 .slider *{
     box-sizing: border-box;
@@ -140,7 +142,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    padding: 5em;
+    padding: 1em 0;
     justify-content: space-around;
 }
 .kontakt div{
@@ -157,4 +159,51 @@ body{
 }
 .kontakt p{
     font-weight: 500;
+    font-size: 17px;
+
+}
+.kontakt a{
+    font-weight: 500;
+    font-size: 17px;
+    color: #0a2351;
+    text-decoration: none;
+}
+.kontakt a:hover, .footer a:hover{
+    opacity: 0.7;
+}
+.footer div{
+    justify-content: space-around;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    padding: 3em;
+}
+.footer a{
+    font-size: 22px;
+    color: #0a2351;
+    text-decoration: none;
+}
+@media screen and (max-width:1050px) {
+    .desc{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .achievements{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media  screen and (max-width: 950px) {
+    .kontakt{
+        width: 100%;
+    }
+    .kontakt h3{
+        font-size:20px;
+    }
+    .kontakt p, .kontakt a{
+        font-size: 15px;
+    }
 }
