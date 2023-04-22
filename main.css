@@ -9,7 +9,7 @@ body{
     max-width: 1960px;
 }
 .title{
-    min-height: 50em;
+    height: 100vh;
     background-image: url(/img/main11.jpg);
     background-position: center; 
     background-repeat: no-repeat;
@@ -48,14 +48,14 @@ header a{
 .testimonial h3{
     text-align: center;
     color: #263136;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 .testimonial p{
     text-align: center;
     color: #505050;
     margin-top: 1em;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
 }
 .info{
@@ -105,7 +105,7 @@ header a{
 }
 
 .program{
-    background: linear-gradient(0deg, #b0b1b5, #F3F3F3);
+    background-color:#F3F3F3;
     padding-bottom: 5%;
 }
 .program h1{
@@ -214,4 +214,66 @@ header a{
 }
 .contact-social img:hover, a:hover{
     opacity: 0.7
+}
+
+.faq-container{
+    background: linear-gradient(0deg, #b0b1b5, #F3F3F3);
+    height: 25em;
+    padding: 4em;
+}
+.faq-container h1{
+    text-align: center;
+    font-size: 28px;
+    color: #0a2351;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.container{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+}
+
+.toggle{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #0a2351;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.content{
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+@media  screen and (max-width: 950px) {
+    header ul{
+        width: 80%;
+    }
+    .container{
+        width: 85%;
+    }
+    .faq-container{
+        height:35em
+    }
 }

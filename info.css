@@ -143,7 +143,7 @@ body{
     margin-right: auto;
     display: flex;
     padding: 1em 0;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .kontakt div{
     text-align: center;
@@ -185,6 +185,7 @@ body{
     color: #0a2351;
     text-decoration: none;
 }
+
 @media screen and (max-width:1050px) {
     .desc{
         flex-direction: column;
@@ -205,5 +206,8 @@ body{
     }
     .kontakt p, .kontakt a{
         font-size: 15px;
+    }
+    .footer div{
+        width: 50%;
     }
 }
