@@ -81,6 +81,7 @@ header a{
 .info img{
     height:25em;
     border-radius:0px 25px 25px 0px; 
+    width: 100%;
 }
 .info-text{
     margin: 4em 5em;
